@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO TÉCNICO ═══ -->
+  <title>Créditos a Pensionados y Jubilados | Asesoría Profesional Financiera IMSS Ley 73</title>
+  <meta name="description" content="Asesoría Profesional Financiera para pensionados y jubilados del IMSS mediante los derechos de la Ley 73. Créditos accesibles para pensión por invalidez, viudez, vejez y más.">
+  <meta name="keywords" content="créditos pensionados, jubilados IMSS, préstamos pensión, ley 73 IMSS, créditos jubilados, asesoría financiera pensionados, pensión invalidez vejez viudez">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Créditos a Pensionados y Jubilados | Asesoría Financiera IMSS">
+  <meta property="og:description" content="Servicios de asesoría financiera para pensionados y jubilados del IMSS con derechos de la Ley 73.">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ═══ RECURSOS EXTERNOS ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- anime.js eliminado — animaciones nativas en hero-animations.js y main.js -->
+
+  <!-- ═══ TAILWIND CONFIG ═══ -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              coffee:    '#6B3A1F',
+              coffeeHov: '#7D4A28',
+              dark:      '#3B1E0A',
+              gray:      '#FAF7F4',
+              silver:    '#A8A9AD',
+              platinum:  '#E8E6E3',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- ══════════════════════════════════════════
+       LOADER PREMIUM
+  ══════════════════════════════════════════ -->
+  <div id="page-loader" aria-hidden="true" role="status">
+    <div class="loader-scene">
+      <div class="loader-ring-c"></div>
+      <div class="loader-ring-a"></div>
+      <div class="loader-ring-b"></div>
+      <div class="loader-icon-center">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+      </div>
+    </div>
+    <p class="loader-label">
+      Preparando tu asesoría<span class="loader-dot">.</span><span class="loader-dot">.</span><span class="loader-dot">.</span>
+    </p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HEADER — centrado
+  ══════════════════════════════════════════ -->
+  <header class="site-header w-full py-4 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-10">
+      <!-- Identidad textual centrada -->
+      <div class="flex items-center gap-3">
+        <div class="header-icon">
+          <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-xs font-bold uppercase tracking-widest text-brand-coffee leading-none">Asesoría Profesional Financiera</p>
+          <p class="text-[0.65rem] text-gray-500 uppercase tracking-widest mt-0.5">Créditos · Pensionados · Jubilados</p>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav class="flex items-center gap-6 text-sm font-semibold text-gray-600" aria-label="Navegación principal">
+        <a href="#servicios"   class="hover:text-brand-coffee transition-colors">Servicios</a>
+        <a href="#requisitos"  class="hover:text-brand-coffee transition-colors">Requisitos</a>
+        <a href="#contacto"    class="hover:text-brand-coffee transition-colors">Contacto</a>
+        <a href="#contacto"    class="btn-coffee text-white text-xs py-2.5 px-6 rounded-md uppercase tracking-wide">
+          Solicitar Crédito
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO — Premium Big Tech
+    ══════════════════════════════════════════ -->
+    <section class="hero-section" id="hero-section" aria-label="Inicio">
+
+      <!-- Capa decorativa de fondo -->
+      <div class="hero-bg" aria-hidden="true">
+        <!-- Gota de agua — capa fotográfica temática -->
+        <div class="hero-drop-bg"></div>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-dots"></div>
+        <div class="hero-orb orb-a"></div>
+        <div class="hero-orb orb-b"></div>
+        <div class="hero-orb orb-c"></div>
+      </div>
+
+      <!-- Anillos decorativos -->
+      <div class="hero-ring ring-a" aria-hidden="true"></div>
+      <div class="hero-ring ring-b" aria-hidden="true"></div>
+      <div class="hero-ring ring-c" aria-hidden="true"></div>
+
+      <!-- Contenido principal -->
+      <div class="hero-inner">
+
+        <!-- Badge "en vivo" -->
+        <div class="h-badge" data-reveal style="--d:0ms">
+          <span class="badge-live-dot" aria-hidden="true"></span>
+          <i class="fa-solid fa-certificate badge-icon" aria-hidden="true"></i>
+          <span>Asesoría Profesional · IMSS Ley 73</span>
+        </div>
+
+        <!-- Título principal -->
+        <h1 class="h-title" data-reveal style="--d:160ms">
+          Créditos para<br>
+          <span class="h-title-accent">Pensionados</span>&nbsp;y&nbsp;Jubilados
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="h-subtitle" data-reveal style="--d:330ms">
+          Te ayudamos a acceder a los beneficios financieros que mereces como pensionado o jubilado del <strong>IMSS</strong>, respaldados en los derechos de la <strong>Ley 73</strong>. Atención personalizada, sin complicaciones.
+        </p>
+
+        <!-- CTAs -->
+        <div class="h-ctas" data-reveal style="--d:510ms">
+          <a href="#contacto" class="cta-primary">
+            <span class="cta-shine" aria-hidden="true"></span>
+            <i class="fa-brands fa-whatsapp cta-wa-icon" aria-hidden="true"></i>
+            <span>Solicitar mi Crédito</span>
+            <i class="fa-solid fa-arrow-right cta-arrow" aria-hidden="true"></i>
+          </a>
+          <a href="#servicios" class="cta-secondary">
+            <span>Ver Servicios</span>
+            <i class="fa-solid fa-chevron-down cta-chevron" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="h-stats" data-reveal style="--d:680ms">
+          <div class="h-stat">
+            <span class="stat-n"><span data-count="6">0</span></span>
+            <span class="stat-lbl">Tipos de Pensión</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="h-stat">
+            <span class="stat-n">100<span class="stat-suffix">%</span></span>
+            <span class="stat-lbl">Asesoría Personalizada</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="h-stat">
+            <span class="stat-n stat-text">IMSS</span>
+            <span class="stat-lbl">Ley 73</span>
+          </div>
+        </div>
+
+        <!-- ── Tira de fotos reales (proof social) ── -->
+        <div class="hero-photo-strip" data-reveal style="--d:870ms">
+          <figure class="hps-photo">
+            <img src="https://images.unsplash.com/photo-1758686254525-2c5e9698e478?auto=format&fit=crop&w=240&h=160&q=80"
+                 alt="Pareja jubilada usando computadora con sonrisas"
+                 loading="lazy">
+            <figcaption>Proceso digital</figcaption>
+          </figure>
+          <figure class="hps-photo">
+            <img src="https://images.unsplash.com/photo-1758612898691-afe3e1d08a0a?auto=format&fit=crop&w=240&h=160&q=80"
+                 alt="Pensionado satisfecho frente a su computadora"
+                 loading="lazy">
+            <figcaption>Clientes satisfechos</figcaption>
+          </figure>
+          <figure class="hps-photo">
+            <img src="https://images.unsplash.com/photo-1758686254493-d73c9c2a3049?auto=format&fit=crop&w=240&h=160&q=80"
+                 alt="Pareja revisando documentos de pensión en casa"
+                 loading="lazy">
+            <figcaption>Atención personalizada</figcaption>
+          </figure>
+        </div>
+
+        <!-- Trust chips para mobile (debajo de stats) -->
+        <div class="h-trust-mobile" data-reveal style="--d:820ms">
+          <span class="trust-chip"><i class="fa-solid fa-shield-halved"></i> 100% Legal</span>
+          <span class="trust-chip"><i class="fa-solid fa-bolt"></i> Respuesta en 24 hrs</span>
+          <span class="trust-chip"><i class="fa-solid fa-hand-holding-heart"></i> Sin costo inicial</span>
+        </div>
+
+      </div><!-- /hero-inner -->
+
+      <!-- Tarjetas flotantes (desktop) -->
+      <div class="float-card fc-1" data-reveal data-delay="980" aria-hidden="true">
+        <div class="fc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="fc-text">
+          <strong>100% Legal</strong>
+          <span>Avalado por IMSS Ley 73</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-2" data-reveal data-delay="1120" aria-hidden="true">
+        <div class="fc-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="fc-text">
+          <strong>Respuesta rápida</strong>
+          <span>Menos de 24 hrs</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-3" data-reveal data-delay="1260" aria-hidden="true">
+        <div class="fc-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <div class="fc-text">
+          <strong>Sin costo inicial</strong>
+          <span>Asesoría gratuita</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SERVICIOS — 6 tipos de pensión
+    ══════════════════════════════════════════ -->
+    <section id="servicios" class="services-section py-20 md:py-28 bg-brand-gray" aria-label="Tipos de pensión atendidos">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16 section-anim-title">
+          <span class="section-label">Lo que hacemos</span>
+          <h2 class="section-title mt-1">Servicios para <span class="text-brand-coffee">Pensionados</span></h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+          <p class="text-sm text-gray-500 mt-4 max-w-2xl mx-auto">
+            Atendemos a todas las personas pensionadas y/o jubiladas del IMSS mediante los derechos de la <strong>Ley 73</strong>. Aquí los tipos de pensión que aceptamos:
+          </p>
+        </div>
+
+        <!-- ── Foto contextual servicios ── -->
+        <div class="services-photo-banner mb-12 rounded-2xl overflow-hidden relative shadow-lg" data-reveal>
+          <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&h=360&q=82"
+               alt="Asesor financiero explicando crédito a pareja de jubilados del IMSS"
+               class="w-full object-cover" loading="lazy" style="height:260px;">
+          <div class="services-photo-overlay">
+            <div class="spo-content">
+              <i class="fa-solid fa-circle-check spo-icon" aria-hidden="true"></i>
+              <p class="spo-quote">"Atendemos todos los tipos de pensión reconocidos por el IMSS bajo la <strong>Ley 73</strong>"</p>
+              <span class="spo-sub">Asesoría Profesional Financiera · Respaldo Legal Garantizado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-person-cane" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Invalidez Parcial<br>Permanente</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Crédito disponible para pensionados con invalidez parcial permanente reconocida por el IMSS bajo la Ley 73.</p>
+          </article>
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-wheelchair" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Invalidez Total<br>Permanente</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Acceso a crédito para pensionados con invalidez total permanente, con atención especializada y sin complicaciones.</p>
+          </article>
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-heart-crack" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Pensión<br>por Viudez</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Apoyamos a viudas y viudos que reciben pensión del IMSS para que accedan a los créditos que les corresponden.</p>
+          </article>
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Pensión<br>por Ascendencia</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Gestionamos créditos para beneficiarios con pensión por ascendencia reconocida por el IMSS bajo la Ley 73.</p>
+          </article>
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-briefcase-clock" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Cesantía en<br>Edad Avanzada</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Créditos para pensionados por cesantía en edad avanzada, un derecho al que miles de trabajadores tienen acceso.</p>
+          </article>
+
+          <article class="service-card silver-card rounded-2xl p-8 flex flex-col items-center text-center">
+            <div class="service-icon mb-6">
+              <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-base mb-3 uppercase tracking-wide text-gray-800">Pensión<br>por Vejez</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">Asesoría y crédito para pensionados por vejez del IMSS, con acompañamiento profesional en todo el proceso.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SECCIÓN FEATURE — Proceso + Imagen real
+    ══════════════════════════════════════════ -->
+    <section class="feature-split" aria-label="Cómo funciona el proceso">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+
+        <!-- Imagen lado izquierdo -->
+        <div class="fs-img-col">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&h=600&q=82"
+               alt="Asesor financiero atendiendo a pareja de pensionados en oficina"
+               loading="lazy">
+          <div class="fs-img-badge">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <span>Avalado por IMSS Ley 73</span>
+          </div>
+        </div>
+
+        <!-- Texto lado derecho -->
+        <div class="fs-text-col">
+          <span class="section-label">¿Cómo funciona?</span>
+          <h2 class="section-title mt-2 mb-4">
+            Un proceso simple,<br>
+            <span class="text-brand-coffee">transparente y seguro</span>
+          </h2>
+          <p class="text-sm text-gray-600 leading-relaxed mb-8">
+            Nuestros asesores te acompañan desde la primera consulta hasta que el crédito llegue a tus manos. Sin complicaciones, sin letra chica.
+          </p>
+
+          <div class="fs-steps">
+            <div class="fs-step">
+              <div class="fs-step-n">01</div>
+              <div class="fs-step-info">
+                <strong>Consulta gratuita</strong>
+                <p>Evaluamos tu caso sin costo ni compromiso, por WhatsApp o en persona.</p>
+              </div>
+            </div>
+            <div class="fs-step">
+              <div class="fs-step-n">02</div>
+              <div class="fs-step-info">
+                <strong>Revisión de documentos</strong>
+                <p>Solo necesitas 3 documentos básicos. Te decimos exactamente cuáles.</p>
+              </div>
+            </div>
+            <div class="fs-step">
+              <div class="fs-step-n">03</div>
+              <div class="fs-step-info">
+                <strong>Aprobación y desembolso</strong>
+                <p>Una vez aprobado, recibes tu crédito de forma rápida y sin contratiempos.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contacto" class="fs-cta btn-coffee text-white inline-flex items-center gap-2 mt-8">
+            Iniciar mi proceso
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         REQUISITOS
+    ══════════════════════════════════════════ -->
+    <section id="requisitos" class="py-20 bg-white" aria-label="Requisitos para el crédito">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-14 section-anim-title">
+          <span class="section-label">¿Califico para el crédito?</span>
+          <h2 class="section-title mt-1">Requisitos y <span class="text-brand-coffee">Documentos</span></h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+          <!-- Foto contextual -->
+          <div class="req-img-col">
+            <img src="https://images.unsplash.com/photo-1758691031730-640885ad19e5?auto=format&fit=crop&w=500&h=650&q=82"
+                 alt="Pareja de adultos mayores revisando documentos de pensión"
+                 loading="lazy">
+            <div class="req-img-caption">
+              <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+              <p>Tus documentos, tratados con total confidencialidad.</p>
+            </div>
+          </div>
+
+          <!-- Requisitos -->
+          <div class="req-box">
+            <div class="req-header">
+              <i class="fa-solid fa-clipboard-list text-2xl" aria-hidden="true"></i>
+              <h3 class="font-bold uppercase tracking-wide text-white text-sm ml-3">Requisitos para Aplicar</h3>
+            </div>
+            <ul class="req-list">
+              <li class="req-item">
+                <div class="req-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <p class="text-sm text-gray-700 leading-relaxed"><strong>Pensión vigente superior a $6,000.00</strong> — La pensión actual debe ser mayor a seis mil pesos mensuales.</p>
+              </li>
+              <li class="req-item">
+                <div class="req-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <p class="text-sm text-gray-700 leading-relaxed"><strong>Sin créditos en recuperación ante el IMSS</strong>, o en caso de tenerlos, que se hayan pagado al menos <strong>25 mensualidades</strong>.</p>
+              </li>
+              <li class="req-item">
+                <div class="req-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <p class="text-sm text-gray-700 leading-relaxed"><strong>Asignaciones familiares</strong> únicamente por cónyuge y/o hijos menores de 18 años.</p>
+              </li>
+              <li class="req-item">
+                <div class="req-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <p class="text-sm text-gray-700 leading-relaxed">Ser el <strong>pensionado, Derecho-Habiente y/o beneficiario</strong> reconocido por el IMSS.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Documentos -->
+          <div class="docs-box">
+            <div class="docs-header">
+              <i class="fa-solid fa-folder-open text-2xl" aria-hidden="true"></i>
+              <h3 class="font-bold uppercase tracking-wide text-white text-sm ml-3">Documentos Requeridos</h3>
+            </div>
+            <ul class="docs-list">
+              <li class="docs-item">
+                <div class="docs-icon"><i class="fa-solid fa-id-card" aria-hidden="true"></i></div>
+                <div>
+                  <p class="font-semibold text-sm text-gray-800">Identificación Oficial</p>
+                  <p class="text-xs text-gray-500 mt-0.5">INE, pasaporte u otra identificación oficial vigente.</p>
+                </div>
+              </li>
+              <li class="docs-item">
+                <div class="docs-icon"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i></div>
+                <div>
+                  <p class="font-semibold text-sm text-gray-800">CURP</p>
+                  <p class="text-xs text-gray-500 mt-0.5">Clave Única del Registro de Población actualizada.</p>
+                </div>
+              </li>
+              <li class="docs-item">
+                <div class="docs-icon"><i class="fa-solid fa-file-shield" aria-hidden="true"></i></div>
+                <div>
+                  <p class="font-semibold text-sm text-gray-800">Documento Oficial con Número del IMSS</p>
+                  <p class="text-xs text-gray-500 mt-0.5">Cualquier documento oficial que contenga tu número de seguridad social del IMSS.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="docs-note mt-6">
+              <i class="fa-solid fa-circle-info text-brand-coffee mr-2" aria-hidden="true"></i>
+              <p class="text-xs text-gray-600">¿Tienes dudas sobre tus documentos? Contáctanos por WhatsApp y te orientamos sin costo.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         BENEFICIOS
+    ══════════════════════════════════════════ -->
+    <section id="beneficios" class="benefits-section py-20 bg-brand-gray border-y border-gray-100" aria-label="Por qué elegirnos">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-14 section-anim-title">
+          <span class="section-label">Ventajas de trabajar con nosotros</span>
+          <h2 class="section-title mt-1">¿Por qué <span class="text-brand-coffee">elegirnos</span>?</h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+        </div>
+
+        <div class="benefits-split-layout">
+
+          <!-- Foto lateral beneficios -->
+          <div class="benefits-photo-col" data-reveal>
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=560&h=680&q=82"
+                 alt="Asesora financiera profesional con carpeta de documentos de pensión"
+                 loading="lazy">
+            <div class="benefits-photo-badge">
+              <i class="fa-solid fa-award" aria-hidden="true"></i>
+              <span>Asesores Certificados</span>
+            </div>
+          </div>
+
+          <!-- Grid de beneficios -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-10 text-center">
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Confianza<br>y Seguridad</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Asesoría transparente, sin letra chica y con total confidencialidad en tu información.</p>
+          </article>
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Asesor<br>Dedicado</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Un profesional te acompaña desde la consulta inicial hasta la aprobación de tu crédito.</p>
+          </article>
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Proceso<br>Ágil</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Simplificamos los trámites para que obtengas tu crédito sin demoras innecesarias.</p>
+          </article>
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Respaldo<br>Legal</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Operamos bajo los derechos establecidos en la Ley 73 del IMSS, con total legalidad.</p>
+          </article>
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-headset" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Atención<br>Personalizada</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Resolvemos tus dudas por WhatsApp, teléfono o en persona, con paciencia y claridad.</p>
+          </article>
+
+          <article class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-sm uppercase text-gray-800 leading-snug">Trato<br>Digno</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Entendemos las necesidades de nuestros adultos mayores y los tratamos con el respeto que merecen.</p>
+          </article>
+
+        </div><!-- /benefits grid -->
+        </div><!-- /benefits-split-layout -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TESTIMONIOS — Fotos reales de clientes
+    ══════════════════════════════════════════ -->
+    <section class="testimonials-section py-20 bg-white" aria-label="Testimonios de clientes">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-14 section-anim-title">
+          <span class="section-label">Lo que dicen nuestros clientes</span>
+          <h2 class="section-title mt-1">Historias de <span class="text-brand-coffee">Éxito</span></h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <article class="testi-card" data-reveal>
+            <div class="testi-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1541823709867-1b206113181a?auto=format&fit=crop&w=120&h=120&q=80"
+                   alt="Roberto M., pensionado por vejez" loading="lazy">
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testi-quote">"En menos de una semana ya tenía mi crédito aprobado. El asesor me explicó todo con mucha paciencia y claridad."</blockquote>
+            <footer class="testi-footer">
+              <strong>Roberto M.</strong>
+              <span>Pensión por Vejez · Jalisco</span>
+            </footer>
+          </article>
+
+          <article class="testi-card testi-featured" data-reveal>
+            <div class="testi-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=120&h=120&q=80"
+                   alt="María G., pensionada por viudez" loading="lazy">
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testi-quote">"Pensé que sería muy complicado por ser viuda, pero me dijeron que yo también calificaba. El proceso fue sencillo y sin sorpresas."</blockquote>
+            <footer class="testi-footer">
+              <strong>María G.</strong>
+              <span>Pensión por Viudez · CDMX</span>
+            </footer>
+          </article>
+
+          <article class="testi-card" data-reveal>
+            <div class="testi-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&h=120&q=80"
+                   alt="Arturo L., pensionado por invalidez" loading="lazy">
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <blockquote class="testi-quote">"No sabía que con mi pensión por invalidez podía acceder a un crédito. Me orientaron muy bien desde el primer contacto por WhatsApp."</blockquote>
+            <footer class="testi-footer">
+              <strong>Arturo L.</strong>
+              <span>Invalidez Permanente · Monterrey</span>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         LOGÍSTICA
+    ══════════════════════════════════════════ -->
+    <section class="logistics-section py-20 bg-white" aria-label="Cómo trabajamos">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-14 section-anim-title">
+          <span class="section-label">Cómo trabajamos</span>
+          <h2 class="section-title mt-1">Atención y <span class="text-brand-coffee">Servicio</span></h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+        </div>
+
+        <div class="logistics-box p-10 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          <div class="logistics-item">
+            <div class="text-gray-300 text-3xl mb-4"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-white uppercase tracking-wide text-sm mb-2">Cobertura Nacional</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Atendemos a pensionados y jubilados en toda la República Mexicana de manera presencial o por WhatsApp.</p>
+          </div>
+
+          <div class="logistics-item">
+            <div class="text-gray-300 text-3xl mb-4"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-white uppercase tracking-wide text-sm mb-2">Horarios de Atención</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Lunes a Viernes de 9:00 a 18:00 h.<br>Atención de consultas vía WhatsApp en horario extendido.</p>
+          </div>
+
+          <div class="logistics-item">
+            <div class="text-gray-300 text-3xl mb-4"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+            <h3 class="font-bold text-white uppercase tracking-wide text-sm mb-2">Contacto Directo</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Escríbenos por WhatsApp para una orientación gratuita y sin compromiso. Tu asesor te responderá a la brevedad.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════ -->
+    <section id="contacto" class="contact-section py-20 bg-brand-gray" aria-label="Contacto">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-14 section-anim-title">
+          <span class="section-label">Estamos aquí para ti</span>
+          <h2 class="section-title mt-1">Solicita tu <span class="text-brand-coffee">Crédito</span></h2>
+          <div class="coffee-underline mx-auto mt-3"></div>
+          <p class="text-sm text-gray-500 mt-4 max-w-xl mx-auto">Completa el formulario y nos comunicamos contigo a la brevedad para orientarte sin costo.</p>
+        </div>
+
+        <!-- Grid: imagen izquierda + formulario derecha -->
+        <div class="contact-grid">
+
+          <!-- Imagen lateral de confianza -->
+          <div class="contact-img-col">
+            <img src="https://images.unsplash.com/photo-1758686254415-9348b5b5df01?auto=format&fit=crop&w=600&h=700&q=82"
+                 alt="Pareja de adultos mayores revisando papeles de crédito"
+                 loading="lazy">
+            <div class="contact-img-overlay">
+              <div class="cio-quote">
+                <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                <p>"El proceso fue más sencillo de lo que imaginaba. Mi asesor estuvo conmigo en cada paso."</p>
+                <span>— Pensionado IMSS, Aguascalientes</span>
+              </div>
+              <div class="cio-stats">
+                <div class="cio-stat">
+                  <strong>+500</strong>
+                  <span>créditos gestionados</span>
+                </div>
+                <div class="cio-stat">
+                  <strong>24 hrs</strong>
+                  <span>tiempo de respuesta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="contact-form-wrap bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
+          <h3 class="text-lg font-bold uppercase tracking-wide mb-1 text-gray-800">Solicita tu asesoría gratuita</h3>
+          <p class="text-sm text-gray-500 mb-7">Te respondemos en menos de 24 horas hábiles vía WhatsApp.</p>
+
+          <form action="#" method="POST" class="contact-form space-y-4" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="nombre" class="sr-only">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Nombre completo" required autocomplete="name">
+              </div>
+              <div>
+                <label for="telefono" class="sr-only">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       placeholder="Teléfono de contacto" required autocomplete="tel">
+              </div>
+            </div>
+            <div>
+              <label for="email" class="sr-only">Correo electrónico</label>
+              <input type="email" id="email" name="email"
+                     placeholder="Correo electrónico (opcional)" autocomplete="email">
+            </div>
+            <div>
+              <label for="servicio" class="sr-only">Tipo de pensión</label>
+              <select id="servicio" name="servicio">
+                <option value="" disabled selected>Tipo de pensión que tienes</option>
+                <option value="invalidez-parcial">Invalidez Parcial Permanente</option>
+                <option value="invalidez-total">Invalidez Total Permanente</option>
+                <option value="viudez">Viudez</option>
+                <option value="ascendencia">Ascendencia</option>
+                <option value="cesantia">Cesantía en Edad Avanzada</option>
+                <option value="vejez">Vejez</option>
+                <option value="otro">No estoy seguro</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensaje" class="sr-only">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"
+                        placeholder="Cuéntanos brevemente tu situación y en qué podemos ayudarte..."></textarea>
+            </div>
+            <button type="submit" class="btn-coffee w-full text-white font-bold py-3.5 rounded-lg uppercase tracking-wide text-sm mt-2 flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-green-300 text-lg" aria-hidden="true"></i>
+              Enviar por WhatsApp
+            </button>
+            <p class="text-xs text-gray-400 text-center mt-2">Al enviar, se abrirá WhatsApp con tu información lista para enviar.</p>
+          </form>
+        </div><!-- /contact-form-wrap -->
+
+        </div><!-- /contact-grid -->
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         BANNER WHATSAPP
+    ══════════════════════════════════════════ -->
+    <section class="py-10 bg-white border-y border-gray-100" aria-label="Contacto WhatsApp">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <p class="text-sm text-gray-500 uppercase tracking-widest mb-3">¿Prefieres hablar directamente?</p>
+        <a href="https://wa.me/5214492888888" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 text-xl md:text-2xl font-bold text-gray-800 hover:text-green-600 transition-colors">
+          <i class="fa-brands fa-whatsapp text-green-500 text-4xl" aria-hidden="true"></i>
+          52 1 449 288 8888
+        </a>
+        <p class="text-xs text-gray-400 mt-2">Lunes a Viernes · 9:00 – 18:00 h</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer py-12 text-center text-white" aria-label="Pie de página">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <!-- Ícono central -->
+      <div class="flex flex-col items-center justify-center mb-6">
+        <div class="footer-brand-icon">
+          <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>
+        </div>
+        <p class="text-xs font-bold uppercase tracking-widest text-amber-300 mt-3">Asesoría Profesional Financiera</p>
+        <p class="text-[0.6rem] text-gray-400 uppercase tracking-widest mt-1">Créditos · Pensionados · Jubilados · IMSS Ley 73</p>
+      </div>
+
+      <!-- Links rápidos -->
+      <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-gray-400 mb-8" aria-label="Links del footer">
+        <a href="#servicios"  class="hover:text-amber-300 transition-colors">Servicios</a>
+        <a href="#requisitos" class="hover:text-amber-300 transition-colors">Requisitos</a>
+        <a href="#beneficios" class="hover:text-amber-300 transition-colors">Beneficios</a>
+        <a href="#contacto"   class="hover:text-amber-300 transition-colors">Contacto</a>
+        <a href="#"           class="hover:text-amber-300 transition-colors">Aviso de Privacidad</a>
+      </nav>
+
+      <hr class="footer-divider border mb-6">
+      <p class="text-xs text-gray-500">&copy; 2026 Asesoría Profesional Financiera — Créditos a Pensionados y Jubilados. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       BOTÓN FLOTANTE WHATSAPP
+  ══════════════════════════════════════════ -->
+  <div class="whatsapp-fab" role="complementary" aria-label="Chat por WhatsApp">
+    <a href="https://wa.me/5214492888888" target="_blank" rel="noopener noreferrer"
+       class="wa-btn" aria-label="Abrir WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <span class="wa-label">Chatea con nosotros</span>
+  </div>
+
+  <script src="hero-animations.js" defer></script>
+  <script src="main.js" defer></script>
+
+</body>
+</html>
