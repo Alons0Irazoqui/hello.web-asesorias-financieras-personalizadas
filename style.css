@@ -774,7 +774,7 @@ body {
 }
 @media (min-width: 1024px) {
   .benefits-split-layout {
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 480px 1fr;
     align-items: center;
   }
 }
@@ -792,6 +792,18 @@ body {
 }
 @media (min-width: 1024px) {
   .benefits-photo-col img { height: 560px; }
+}
+.benefits-photos-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.benefits-photos-duo img {
+  height: 220px;
+  border-radius: 0;
+}
+@media (min-width: 1024px) {
+  .benefits-photos-duo img { height: 340px; }
 }
 .benefits-photo-badge {
   position: absolute;
