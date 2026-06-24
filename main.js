@@ -19,14 +19,16 @@
     form.addEventListener('submit', e => {
       e.preventDefault();
 
-      const nombre   = (form.querySelector('#nombre')?.value   || '').trim();
-      const telefono = (form.querySelector('#telefono')?.value || '').trim();
-      const email    = (form.querySelector('#email')?.value    || '').trim();
-      const sel      = form.querySelector('#servicio');
-      const servicio = sel && sel.selectedIndex > 0
+      const nombre       = (form.querySelector('#nombre')?.value        || '').trim();
+      const telefono     = (form.querySelector('#telefono')?.value      || '').trim();
+      const email        = (form.querySelector('#email')?.value         || '').trim();
+      const sel          = form.querySelector('#servicio');
+      const servicio     = sel && sel.selectedIndex > 0
         ? sel.options[sel.selectedIndex].text
         : 'No especificado';
-      const mensaje  = (form.querySelector('#mensaje')?.value  || '').trim();
+      const nss          = (form.querySelector('#nss')?.value           || '').trim();
+      const montoPension = (form.querySelector('#monto-pension')?.value || '').trim();
+      const mensaje      = (form.querySelector('#mensaje')?.value       || '').trim();
 
       if (!nombre || !telefono) {
         alert('Por favor completa tu Nombre y Teléfono.');
@@ -40,6 +42,8 @@
 📱 *Teléfono:* ${telefono}
 📧 *Email:* ${email || 'No proporcionado'}
 📋 *Tipo de pensión:* ${servicio}
+🔢 *NSS:* ${nss || 'No proporcionado'}
+💰 *Monto aprox. de pensión:* ${montoPension ? '$' + montoPension + ' MXN' : 'No proporcionado'}
 💬 *Mensaje:* ${mensaje || 'Sin mensaje adicional'}`;
 
       window.open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener,noreferrer');

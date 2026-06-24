@@ -722,6 +722,18 @@
                 <option value="otro">No estoy seguro</option>
               </select>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="nss" class="sr-only">Número de Seguro Social</label>
+                <input type="text" id="nss" name="nss"
+                       placeholder="Número de Seguro Social (NSS)" inputmode="numeric" maxlength="11">
+              </div>
+              <div>
+                <label for="monto-pension" class="sr-only">Monto aproximado de pensión</label>
+                <input type="text" id="monto-pension" name="monto-pension"
+                       placeholder="Monto aprox. de pensión (MXN)" inputmode="numeric">
+              </div>
+            </div>
             <div>
               <label for="mensaje" class="sr-only">Mensaje</label>
               <textarea id="mensaje" name="mensaje"
